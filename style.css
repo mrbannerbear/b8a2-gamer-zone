@@ -1,0 +1,129 @@
+*{margin: 0;
+padding: 0; box-sizing: border-box;
+font-family: 'Work Sans', sans-serif;
+}
+
+
+
+/* header starts */
+
+
+    /* nav */
+    nav{display: flex; align-items: center; justify-content: space-between;
+        padding: 40px 120px; background: #FFF;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);}
+        /* logo container */
+
+        .logo-container{display: flex; align-items: center;
+            gap: 15px;}
+
+        .logo-container img{width: 66.041px;
+            height: 30px;
+            flex-shrink: 0;}
+
+        .logo-container h2{font-size: 2rem;
+            font-weight: 700;
+            line-height: normal;}
+
+        .logo-container h2 span{color: #FF42A5;}
+
+        /* menu */
+
+        .menu{color: #3C354F;
+            font-size: 0.8rem;
+            font-weight: 500;
+            line-height: normal;
+            display: flex; align-items: center;
+            gap: 25px;}
+
+        .menu a{text-decoration: none; color: #3C354F;}
+
+        .follow-us{display: flex;
+            gap: 15px;
+            align-items: center;
+            height: 40px;
+            padding: 24px;
+            border-radius: 8px;
+            background: rgba(11, 2, 35, 0.10);}
+            .fa-brands{font-size: 1.25rem;}
+            .fa-youtube{color: red;}
+            .fa-tiktok{color: black;}
+            .follow-icons{display: flex; gap: 10px;}
+
+    
+    /* banner */
+
+    .banner{display: flex; gap: 50px; align-items: center;}
+
+            .banner-text{background-image: url('images/Group\ 14.png');
+                background-size: cover; background-position: center; background-repeat: no-repeat;
+                fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+                width: 50%; height: 455px; padding: 100px 150px 120px 120px;
+                box-sizing: border-box;}
+            
+            .banner-text p{color: #0B0223;  
+                font-size: 1.5rem;
+                font-weight: 600;
+                line-height: normal;}
+            
+            .banner-text h1{background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 3rem;
+                position: relative;
+                right: 4px;
+                font-weight: 800;
+                line-height: normal;}
+
+            .banner-text span{display: block;
+                color: #534C64;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: normal;
+                margin-top: -16px;}
+
+            .features-banner{margin-top: 20px;}
+
+            .btn{padding: 11px 20px; border: none; border-radius: 48px;
+                color: #FFF; font-weight: 500;}
+            .btn1{background-color: #FF42A5; margin-top: 20px;}
+            .btn2{background-color: #4EC5F7; margin-top: 20px;}
+
+            /* .banner-pic{border: 2px black solid; height: 90%; width: 40%;} 
+            /* .banner-pic img{width: 100%; display: block; margin: 0 auto; padding-left: 100px; position: relative; right: 20px;} */
+            .banner-pic img{width: 86.5%; position: relative; left: 82px;}
+            .banner-pic{margin-right: 120px; height: 455px;}
+
+
+
+
+/* small devices */
+@media screen and (max-width: 576px) {
+
+    /* header */
+    header{box-shadow: none;}
+    nav{flex-direction: column; padding: 25px 100px; gap: 50px;}
+    .menu{flex-direction: column;}
+    .follow-us{width: 200px; margin-top: 25px;}
+
+    .banner{flex-direction: column-reverse; gap: 5px;}
+    .banner-text{width: 80%; ; background-size: cover;
+        padding: 50px; height: auto;}
+    .banner-pic{padding: 20px; width: auto; height: auto; margin: 0 auto;}
+    .banner-pic img{width: 84%; display: block; margin: 0 auto; position: static;}
+}
+
+
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    
+    /* header */
+    nav{padding: 25px 100px; flex-direction: column; gap: 20px;}
+
+    .banner{flex-direction: column-reverse; gap: 5px;}
+    .banner-text{width: 80%; ; background-size: cover;
+        padding: 50px; height: auto; padding-left: 180px;}
+    .banner-pic{padding: 20px; width: auto; height: auto; margin: 0 auto;}
+    .banner-pic img{width: 84%; display: block; margin: 0 auto; position: static;}
+}
