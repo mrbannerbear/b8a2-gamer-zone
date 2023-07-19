@@ -185,23 +185,15 @@ color: #534C64;
                     font-weight: 600;
                     color: #F948B2;}
 
-             .box-img:after{background-color: rgba(0, 0, 0, 0.60);
-            position: absolute; opacity: 0; content: '\A';}
+            .box-img{opacity: 1; content: '\A'; position: relative; z-index: 1;}
 
-            .box-img:hover:after{opacity: 1;} 
-
-
-            
+            .box-img:hover{position: relative;} 
+            .overlay{height: 300px; width: 250px; border-radius: 16px; display: none; background-color: rgba(0, 0, 0, 0.60); opacity: 0.8;
+            position: absolute; bottom: 3.5px;}
             .box-img:hover .play{display: block;}
             .box-img:hover .watch-now{display: block;}
-            
-            
-            .box-img:hover .box-img img{border: #534C64 2px solid; z-index: -10; 
-                border-radius: 16px;}
-            .box-img:hover .box-img{opacity: 1;}
-            
-
-           .play , .watch-now{display: none; position: absolute; z-index: 100;}
+            .box-img:hover .overlay{display: block; cursor: pointer; border: 3px #534C64 solid;}
+            .play , .watch-now{display: none; position: absolute; z-index: 100;}
             
 
         /* play instantly section */
@@ -337,6 +329,10 @@ footer{background-color: #0B0223; text-align: center; padding: 60px 150px;}
     .box{width: 80%; margin: 0 auto; margin-left: 70px;}
     .box-img img{width: auto;}
     .box-img{position: relative; width: 100%;}
+    .overlay{height:300px; width: 257px;
+        border-radius: 16px; display: none;
+        background-color: rgba(0, 0, 0, 0.60);
+        opacity: 0.8; position: absolute; bottom: 3.5px;}
     
         .play img{width: 40px;}
 
@@ -422,5 +418,6 @@ footer{background-color: #0B0223; text-align: center; padding: 60px 150px;}
         z-index: 100;
         text-align: center;}
         .play img{width: 40px;}
+    .overlay{width: 257px;}
        
 }
